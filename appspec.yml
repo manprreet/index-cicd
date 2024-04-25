@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu
+    destination: /var/www/html/cicd/
 
 permissions:
   - object: /
@@ -11,19 +11,19 @@ permissions:
     owner: root
     group: root
 
-hooks:
+#hooks:
 
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
+  #BeforeInstall:
+   # - location: scripts/before_install.sh
+  #    timeout: 300
 #      runas: root
   
-  AfterInstall:
-    - location: scripts/after_install.sh
-      timeout: 300
+  #AfterInstall:
+   # - location: scripts/after_install.sh
+    #  timeout: 300
 #      runas: root
 
-  ApplicationStart:
-    - location: scripts/app_start.sh
-      timeout: 300
+#  ApplicationStart:
+  #  - location: scripts/app_start.sh
+   #   timeout: 300
 #      runas: root
