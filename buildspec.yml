@@ -15,6 +15,6 @@ phases:
 #      - aws s3 cp index.html s3://your-s3-bucket-name/index.html
   post_build:
     commands:
-      - echo "Restarting Apache2 service"
-      - sudo systemctl restart apache2
-      - echo "Deployment completed"
+    #  - echo "Restarting Apache2 service"
+     # - sudo systemctl restart apache2
+     # - echo "Deployment completed"
