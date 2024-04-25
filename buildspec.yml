@@ -11,7 +11,7 @@ phases:
       - echo "Nothing to do in pre_build phase"
   build:
     commands:
-     - echo "Copying index.html to S3 bucket"
+    - echo "Copying index.html to S3 bucket"
     - aws s3 cp index.html s3://cicdindex/index.html || echo "Failed to copy index.html to S3"
   post_build:
    commands:
